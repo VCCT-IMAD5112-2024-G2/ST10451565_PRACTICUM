@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <ImageView
+      android:id="@+id/imageView3"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:srcCompat="@drawable/download__2_" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:padding="16dp">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="64dp" />
+
+    <EditText
+        android:id="@+id/dateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Day of the week"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/minTempEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Min Temperature (°C)"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/maxTempEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Max Temperature (°C)"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/weatherConditionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Weather Conditions"
+        android:textColorHint="@color/white" />
+
+    <TextView
+        android:id="@+id/avgTempTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Average Temperature: N/A"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Clear" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#03A9F4"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/detailedViewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Detailed View" />
+
+    <Button
+        android:id="@+id/exitoutButton"
+        android:layout_width="103dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Exit" />
+
+  </LinearLayout>
+
+</FrameLayout>
